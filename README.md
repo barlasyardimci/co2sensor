@@ -1,13 +1,13 @@
 # co2sensor
 to run project:
 - go inside project directory\n
-mvn clean install
-then go to target and run:
-java -jar co2.project-0.0.1-SNAPSHOT.jar
+- mvn clean install
+- then go to target and run:
+- java -jar co2.project-0.0.1-SNAPSHOT.jar
 
 the project will run on localhost:8080
 
-exampole cUrls:
+# Exampole cUrls:
 
 # Get city hall account
 curl -X POST localhost:8080/auth/signup
