@@ -1,6 +1,6 @@
 # co2sensor
 to run project:
-go inside project directory
+- go inside project directory\n
 mvn clean install
 then go to target and run:
 java -jar co2.project-0.0.1-SNAPSHOT.jar
