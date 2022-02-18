@@ -9,7 +9,7 @@ the project will run on localhost:8080
 
 exampole cUrls:
 
-#Get city hall account
+# Get city hall account
 curl -X POST localhost:8080/auth/signup
    -H "Content-Type: application/json"
    -d '{
@@ -18,7 +18,7 @@ curl -X POST localhost:8080/auth/signup
     "city" : "istanbul"
 }' 
 
-#Setup sensor
+# Setup sensor
 curl -X POST localhost:8080/sensor/setupSensor
    -H "Content-Type: application/json"
    -d '{
@@ -27,7 +27,7 @@ curl -X POST localhost:8080/sensor/setupSensor
     "city" : "istanbul",
     "district" : "yesilkoy"}'  
     
-#Send sensor records:
+# Send sensor records:
 curl -X POST localhost:8080/sensor/saveRecord
    -H "Content-Type: application/json"
    -d '{
@@ -35,7 +35,7 @@ curl -X POST localhost:8080/sensor/saveRecord
     "district" : "yesilkoy",
     "co2level" : 1}'
     
-#Get record history
+# Get record history
 curl -X POST localhost:8080/sensor/getRecordHistory
    -H "Content-Type: application/json"
    -d '{
@@ -44,7 +44,7 @@ curl -X POST localhost:8080/sensor/getRecordHistory
     "city" : "istanbul",
     "district" : "yesilkoy"}'  
     
- #Get latest record
+# Get latest record
 curl -X POST localhost:8080/sensor/getLatestRecord
    -H "Content-Type: application/json"
    -d '{
